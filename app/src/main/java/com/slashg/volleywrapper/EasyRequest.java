@@ -86,7 +86,7 @@ public class EasyRequest {
         errorListener = new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                //Error JSONBody to be generated here
+                //Error JSON Body to be generated here
                 onErrorCallback.run(JSONFactory.getJSONFromErrorCode(JSONFactory.ERROR_CODE_UNKNOWN));
                 error.printStackTrace();
             }

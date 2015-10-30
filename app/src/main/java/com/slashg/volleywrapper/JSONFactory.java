@@ -48,6 +48,8 @@ public class JSONFactory {
                 hash.put(ERROR_CODE_NETWORK_FAILED, new JSONObject(JSON_NETWORK_FAILED));
                 hash.put(ERROR_CODE_NULL_RESPONSE, new JSONObject(JSON_NULL_RESPONSE));
                 hash.put(ERROR_CODE_TIMEOUT, new JSONObject(JSON_TIMEOUT));
+                hash.put(ERROR_CODE_CORRUPT_JSON, new JSONObject(JSON_CORRUPT_JSON));
+                hash.put(ERROR_CODE_UNKNOWN, new JSONObject(JSON_UNKNOWN));
             }catch(Exception e)
             {
                 //TODO Handle exception better
