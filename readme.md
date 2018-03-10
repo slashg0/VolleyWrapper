@@ -1,4 +1,5 @@
-# Spine
+# Spine 
+[ ![Download](https://api.bintray.com/packages/slashg0/maven/spine/images/download.svg) ](https://bintray.com/slashg0/maven/spine/_latestVersion)
 
 _I'm a Volley wrapper for Android_
 
