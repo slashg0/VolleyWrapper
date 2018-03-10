@@ -1,4 +1,4 @@
-package com.slashg.volleywrapper;
+package xyz.slashg.spine;
 
 import android.content.Context;
 

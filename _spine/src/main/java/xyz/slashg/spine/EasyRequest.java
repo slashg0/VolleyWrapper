@@ -1,4 +1,4 @@
-package com.slashg.volleywrapper;
+package xyz.slashg.spine;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.NetworkResponse;

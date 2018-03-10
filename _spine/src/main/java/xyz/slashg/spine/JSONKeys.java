@@ -1,4 +1,4 @@
-package com.slashg.volleywrapper;
+package xyz.slashg.spine;
 
 /**
  * Created by SlashG on 29-10-2015.
