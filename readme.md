@@ -14,5 +14,6 @@ The library is in quite a nascent stage at present and I wholeheartedly welcome 
 
 Thanks for spending your time on _Spine_!
 
-#####[SlashG](http://slashg.xyz)
+[SlashG](http://slashg.xyz)
+
 ![SlashG Logo](http://slashg.xyz/img/slashg_logo_64.png)
