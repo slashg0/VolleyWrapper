@@ -1,1 +1,1 @@
-include ':spine'
+include ':spine', ':volley-1.1.0'
