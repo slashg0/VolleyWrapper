@@ -1,3 +1,9 @@
+# 0.40
+
+- [X] Uses latest Volley Library (Gradle version)
+- [X] Added Exception for failed init
+- [X] Fixed some issues with v0.2
+
 # 0.2
 
 - [X] Uses latest Volley Library

@@ -46,12 +46,19 @@ public class Spine
 	 *                This ensures that no member object is null in the Spine
 	 */
 
-	public static void initialize(Context context)
+	public static void initialize(Context context) throws CouldNotInitException
 	{
-
-		initTagList();                              //Initialize container ArrayList for tags
-		initJobQueue(context);                             //Initialize request queue
-		setIsStarted(false);                        //Initialize isStarted flag to false
+		try
+		{
+			initTagList();                              //Initialize container ArrayList for tags
+			initJobQueue(context);                             //Initialize request queue
+			setIsStarted(false);                        //Initialize isStarted flag to false
+		} catch (Exception e)
+		{
+			CouldNotInitException couldNotInitException = new CouldNotInitException();
+			couldNotInitException.initCause(e);
+			throw couldNotInitException;
+		}
 	}
 
 	/**
@@ -63,13 +70,20 @@ public class Spine
 	 * @param context   Context instance
 	 * @param hurlStack To allow custom {@code HurlStack} (to overcome error on OS below API19)
 	 */
-	public static void initialize(Context context, HurlStack hurlStack)
+	public static void initialize(Context context, HurlStack hurlStack) throws CouldNotInitException
 	{
 
-
-		initTagList();                              //Initialize container ArrayList for tags
-		initJobQueue(context, hurlStack);                             //Initialize request queue
-		setIsStarted(false);                        //Initialize isStarted flag to false
+		try
+		{
+			initTagList();                              //Initialize container ArrayList for tags
+			initJobQueue(context, hurlStack);                             //Initialize request queue
+			setIsStarted(false);                        //Initialize isStarted flag to false
+		} catch (Exception e)
+		{
+			CouldNotInitException couldNotInitException = new CouldNotInitException();
+			couldNotInitException.initCause(e);
+			throw couldNotInitException;
+		}
 	}
 
 	/**
@@ -84,7 +98,8 @@ public class Spine
 
 	/**
 	 * Initializes requestQueue if necessary
-	 * @param context   Context instance
+	 *
+	 * @param context Context instance
 	 */
 	private static void initJobQueue(Context context)
 	{
@@ -95,6 +110,7 @@ public class Spine
 
 	/**
 	 * Initializes requestQueue if necessary
+	 *
 	 * @param context   Context instance
 	 * @param hurlStack To allow custom {@code HurlStack} (to overcome error on OS below API19)
 	 */
@@ -173,6 +189,7 @@ public class Spine
 
 	/**
 	 * Method to check if the requestQueue is started or not
+	 *
 	 * @return Whether Spine is started or not
 	 */
 	public static boolean isStarted()
@@ -281,6 +298,17 @@ public class Spine
 
 		requestQueue.add(newRequest);
 		startRequestsIfNeeded();
+	}
+
+	/**
+	 * Exception thrown if Spine init fails.
+	 *
+	 * @author SlashG
+	 * @since <nextVersion/>
+	 */
+	public static class CouldNotInitException extends Exception
+	{
+
 	}
 
 }
