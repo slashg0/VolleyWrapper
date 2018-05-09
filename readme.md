@@ -13,7 +13,7 @@ This project lay abandoned for a long time when I had to use it again for anothe
 
 The library is now available on JCenter. To add to your app, simply add this to dependencies in your `build.gradle`
 
-*`compile 'xyz.slashg.spine:spine:0.12'`*
+*`compile 'xyz.slashg.spine:spine:0.2'`*
 
 The library is in quite a nascent stage at present and I wholeheartedly welcome the open-source community to help me make it better.
 
