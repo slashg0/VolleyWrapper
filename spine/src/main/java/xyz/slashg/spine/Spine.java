@@ -249,7 +249,7 @@ public class Spine
 	 * @param newRequest            The request to queue
 	 * @param requestCompleteAction A simple no-parameter callback to notify completion of the request. This is apart from the callback registered in newRequest itself
 	 */
-	public static void queueRequest(final Request<Object> newRequest, final Runnable requestCompleteAction)
+	public static void queueRequest(final Request newRequest, final Runnable requestCompleteAction)
 	{
 
 		requestQueue.add(newRequest);
@@ -276,7 +276,7 @@ public class Spine
 	 *
 	 * @param newRequest The request to queue
 	 */
-	public static void queueRequest(final Request<Object> newRequest)
+	public static void queueRequest(final Request newRequest)
 	{
 
 		requestQueue.add(newRequest);

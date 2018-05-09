@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/VolleyWrapper.iml" filepath="$PROJECT_DIR$/VolleyWrapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/spine/spine.iml" filepath="$PROJECT_DIR$/spine/spine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/volley-1.1.0/volley-1.1.0.iml" filepath="$PROJECT_DIR$/volley-1.1.0/volley-1.1.0.iml" />
     </modules>
   </component>
 </project>
