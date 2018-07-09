@@ -1,3 +1,7 @@
+# 0.40.1
+
+- [X] Removed calls to `startRequestsIfNeeded()` in `Spine.java`
+
 # 0.40
 
 - [X] Uses latest Volley Library (Gradle version)
