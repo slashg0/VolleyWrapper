@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/slashg0/VolleyWrapper'
     gitUrl = 'https://github.com/slashg0/VolleyWrapper.git'
 
-    libraryVersion = '0.40'
+    libraryVersion = '0.40.1'
 
     developerId = 'slashg'
     developerName = 'Suroor Gupta'
@@ -30,8 +30,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 27
-        versionCode 4
-        versionName '0.40'
+        versionCode 5
+        versionName '0.40.1'
     }
     buildTypes {
         release {

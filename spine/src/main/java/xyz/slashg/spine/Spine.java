@@ -44,6 +44,7 @@ public class Spine
 	 *
 	 * @param context Context instance
 	 *                This ensures that no member object is null in the Spine
+	 * @throws CouldNotInitException if the init failed
 	 */
 
 	public static void initialize(Context context) throws CouldNotInitException
@@ -69,6 +70,8 @@ public class Spine
 	 *
 	 * @param context   Context instance
 	 * @param hurlStack To allow custom {@code HurlStack} (to overcome error on OS below API19)
+	 *
+	 * @throws CouldNotInitException if the init failed
 	 */
 	public static void initialize(Context context, HurlStack hurlStack) throws CouldNotInitException
 	{
@@ -250,7 +253,7 @@ public class Spine
 		if (req != null)
 		{
 			requestQueue.add(newRequest.getProcessedRequest());
-			startRequestsIfNeeded();
+			//startRequestsIfNeeded();
 
 		}
 		else
@@ -284,7 +287,7 @@ public class Spine
 				}
 			}
 		});
-		startRequestsIfNeeded();
+		//startRequestsIfNeeded();
 	}
 
 	/**
@@ -297,14 +300,14 @@ public class Spine
 	{
 
 		requestQueue.add(newRequest);
-		startRequestsIfNeeded();
+		//startRequestsIfNeeded();
 	}
 
 	/**
 	 * Exception thrown if Spine init fails.
 	 *
 	 * @author SlashG
-	 * @since <nextVersion/>
+	 * @since 0.40
 	 */
 	public static class CouldNotInitException extends Exception
 	{
